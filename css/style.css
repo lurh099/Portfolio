@@ -1,0 +1,146 @@
+/*
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Colors
+
+main color: #ffdb70
+*/
+
+/****************************************************/
+/* PROFILE BOX */
+/****************************************************/
+
+/**************************/
+/* PROFILE INFO BOX */
+/**************************/
+
+.profile-box,
+.nav-box {
+  width: 100%;
+  background-color: #1e1e1f;
+  border-radius: 1.6rem;
+}
+
+.profile-info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6.4rem 0 0;
+}
+
+.profile-img {
+  background-image: url(../img/profile-img.jpg);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  background-position: center 30%;
+  background-size: 120%;
+  margin-bottom: 3.2rem;
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.profession {
+  font-size: 1.4rem;
+  background-color: #2e2e2e;
+  padding: 0.6rem 2rem;
+  border-radius: 0.7rem;
+  margin-bottom: 3.2rem;
+}
+
+/**************************/
+/* PROFILE SKILLS BOX */
+/**************************/
+
+.profile-box-devider {
+  background-color: rgba(81, 81, 81, 0.5);
+  width: 100%;
+  height: 1px;
+  margin-bottom: 3.2rem;
+}
+
+.profile-skills-box {
+  padding: 0 3.2rem;
+}
+
+.main-heading {
+  color: #e28b26;
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.frontend,
+.backend,
+.databases {
+  margin-bottom: 4.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.secondary-heading {
+  color: #ffdb70;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.skill-name {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.profile-skill {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.skill-circle {
+  width: 5.2rem;
+  height: 5.2rem;
+  background-color: #ffdb70;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react {
+  background: conic-gradient(#ffdb70 80%, #2e2e2e 20%);
+}
+
+.nodejs {
+  background: conic-gradient(#ffdb70 75%, #2e2e2e 25%);
+}
+
+.mysql {
+  background: conic-gradient(#ffdb70 70%, #2e2e2e 30%);
+}
+
+.background-circle {
+  width: 4.4rem;
+  height: 4.4rem;
+  background-color: #1e1e1f;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.percentage {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
