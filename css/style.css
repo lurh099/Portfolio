@@ -8,6 +8,10 @@
 - Colors
 
 main color: #ffdb70
+
+--- 06 BORDER-RADIUS
+
+Default: 16px
 */
 
 /****************************************************/
@@ -23,6 +27,15 @@ main color: #ffdb70
   width: 100%;
   background-color: #1e1e1f;
   border-radius: 1.6rem;
+}
+
+.nav-box {
+  grid-column: 2;
+}
+
+.profile-box {
+  grid-column: 1;
+  grid-row: 1 / -1;
 }
 
 .profile-info-box {
@@ -143,4 +156,44 @@ main color: #ffdb70
 .percentage {
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+/****************************************************/
+/* NAV BOX */
+/****************************************************/
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.nav-box {
+  position: relative;
+}
+
+.navigation {
+  width: 100%;
+  height: 6.4rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+  padding: 2.4rem 3.2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #2b2b2cbf;
+  border-radius: 1.6rem;
+}
+
+.nav-list li {
+  font-size: 1.6rem;
+  color: #d6d6d6;
+}
+
+.nav-box-heading {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
 }
