@@ -27,6 +27,7 @@ Default: 16px
   width: 100%;
   background-color: #1e1e1f;
   border-radius: 1.6rem;
+  border: rgba(81, 81, 81, 0.5) solid 1px;
 }
 
 .nav-box {
@@ -170,12 +171,12 @@ Default: 16px
   position: relative;
 }
 
-.navigation {
+.main-nav {
   width: 100%;
   height: 6.4rem;
 }
 
-.nav-list {
+.main-nav-list {
   list-style: none;
   display: flex;
   gap: 4.8rem;
@@ -184,16 +185,73 @@ Default: 16px
   right: 0;
   top: 0;
   background-color: #2b2b2cbf;
-  border-radius: 1.6rem;
+  border-top-right-radius: 1.6rem;
+  border-bottom-left-radius: 1.6rem;
+  border-left: rgba(81, 81, 81, 0.5) solid 1px;
+  border-bottom: rgba(81, 81, 81, 0.5) solid 1px;
 }
 
-.nav-list li {
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
   font-size: 1.6rem;
   color: #d6d6d6;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #b4b4b4;
+}
+
+.main-nav-link.active {
+  color: #ffdb70;
 }
 
 .nav-box-heading {
   position: absolute;
   top: 5rem;
-  left: 5rem;
+  left: 3.2rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.nav-box-heading::after {
+  content: "";
+  width: 4rem;
+  height: 0.5rem;
+  background-color: #ffdb70;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+}
+
+.main-content {
+  margin-top: 6.5rem;
+  padding: 0 3.2rem;
+  font-size: 1.6rem;
+}
+
+.hi,
+.hi-animation {
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 1px;
+}
+
+.hi-animation {
+  color: #e28b26;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
