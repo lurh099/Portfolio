@@ -1,0 +1,15 @@
+///////////////////////////////////
+About Me Text (Deutsch)
+
+Ich bin Lukas Rühlow, 25 Jahre alt und lebe in Chemnitz.
+Als leidenschaftlicher Fullstack-Webentwickler und App-Entwickler konzentriere ich mich auf moderne Technologien und performante Lösungen. Ich arbeite mit HTML, CSS, JavaScript, React, React Native, Next.js, Node.js, MySQL und MongoDB, um leistungsstarke, benutzerfreundliche und sichere Anwendungen zu erstellen.
+
+Mein Ziel ist es, ästhetisch ansprechende und funktionale digitale Produkte zu bauen, die Nutzer begeistern und echten Mehrwert bieten. Dabei halte ich mich stets über neue Technologien und Best Practices auf dem Laufenden, um meine Fähigkeiten kontinuierlich weiterzuentwickeln und moderne Standards einzuhalten.
+
+///////////////////////////////////
+About Me Text (English)
+
+I’m Lukas Rühlow, a 25-year-old developer based in Chemnitz, Germany.
+As a passionate fullstack web and native app developer, I focus on building modern, performant, and secure applications. I work with HTML, CSS, JavaScript, React, React Native, Next.js, Node.js, MySQL, and MongoDB to deliver high-quality digital solutions with clean code and great user experience.
+
+I'm constantly striving to improve my skills and stay up to date with the latest technologies to ensure the best performance, visual appeal, and security in every project I work on.

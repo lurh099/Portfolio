@@ -55,3 +55,43 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function () {
   setTimeout(type, newTextDelay);
 });
+
+///////////////////////////////////////////////////////////
+// skill circle animation
+
+document.addEventListener("DOMContentLoaded", () => {
+  const skillCircles = document.querySelectorAll(".skill-circle");
+
+  const animateCircle = (circle) => {
+    const percentageElement = circle.querySelector(".percentage");
+    const target = parseInt(circle.getAttribute("data-percentage"));
+    let current = 0;
+
+    const update = () => {
+      if (current <= target) {
+        percentageElement.textContent = `${current} %`;
+        circle.style.background = `conic-gradient(#ffdb70 0% ${current}%, #2e2e2e ${current}% 100%)`;
+        current++;
+        requestAnimationFrame(update);
+      }
+    };
+
+    update();
+  };
+
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCircle(entry.target);
+          obs.unobserve(entry.target); // nur einmal animieren
+        }
+      });
+    },
+    {
+      threshold: 0.6, // mindestens 60% sichtbar
+    }
+  );
+
+  skillCircles.forEach((circle) => observer.observe(circle));
+});

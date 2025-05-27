@@ -90,3 +90,9 @@ body {
 .grid-2-cols {
   grid-template-columns: 1fr 3fr;
 }
+
+.main-content {
+  margin-top: 6.5rem;
+  padding: 0 3.2rem;
+  font-size: 1.6rem;
+}

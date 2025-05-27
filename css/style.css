@@ -51,8 +51,6 @@ Default: 16px
   width: 15rem;
   height: 15rem;
   border-radius: 50%;
-  background-position: center 30%;
-  background-size: 120%;
   margin-bottom: 3.2rem;
 }
 
@@ -123,15 +121,17 @@ Default: 16px
 .skill-circle {
   width: 5.2rem;
   height: 5.2rem;
-  background-color: #ffdb70;
   border-radius: 50%;
+  /* background-color: #ffdb70; */
+  background: conic-gradient(#ffdb70 0%, #2e2e2e 0%);
+  transition: all 0.3s linear;
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.react {
+/* .react {
   background: conic-gradient(#ffdb70 80%, #2e2e2e 20%);
 }
 
@@ -141,7 +141,7 @@ Default: 16px
 
 .mysql {
   background: conic-gradient(#ffdb70 70%, #2e2e2e 30%);
-}
+} */
 
 .background-circle {
   width: 4.4rem;
@@ -158,10 +158,6 @@ Default: 16px
   font-weight: 600;
   font-size: 1.2rem;
 }
-
-/****************************************************/
-/* NAV BOX */
-/****************************************************/
 
 /**************************/
 /* NAVIGATION */
@@ -227,11 +223,9 @@ Default: 16px
   left: 0;
 }
 
-.main-content {
-  margin-top: 6.5rem;
-  padding: 0 3.2rem;
-  font-size: 1.6rem;
-}
+/**************************/
+/* HERO SECTION */
+/**************************/
 
 .hi,
 .hi-animation {
@@ -255,3 +249,7 @@ Default: 16px
     opacity: 0;
   }
 }
+
+/**************************/
+/* ABOUT ME SECTION */
+/**************************/

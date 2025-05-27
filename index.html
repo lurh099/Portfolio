@@ -18,7 +18,7 @@
   <body>
     <div class="container">
       <div class="grid grid-2-cols">
-        <div class="nav-box about">
+        <div class="nav-box">
           <header class="nav-box-header">
             <nav class="main-nav">
               <ul class="main-nav-list">
@@ -30,13 +30,32 @@
               </ul>
             </nav>
           </header>
-          <main class="main-content">
-            <section class="about-me">
-              <h1 class="nav-box-heading">About Me</h1>
-              <p class="hi">Hi, I am Lukas</p>
-              <p class="hi-animation">
-                <span class="typed-text"></span><span class="cursor">|</span>
-              </p>
+
+          <main class="main-content about">
+            <section class="section-hero">
+              <div class="hero">
+                <h1 class="nav-box-heading">About Me</h1>
+                <p class="hi">Hi, I am Lukas</p>
+                <p class="hi-animation">
+                  <span class="typed-text"></span><span class="cursor">|</span>
+                </p>
+              </div>
+            </section>
+            <section class="section-about-me">
+              <div class="about-me">
+                <p class="about-me-text">
+                  I’m Lukas Rühlow, a 25-year-old developer based in Chemnitz,
+                  Germany. As a passionate fullstack web and native app
+                  developer, I focus on building modern, performant, and secure
+                  applications. I work with HTML, CSS, JavaScript, React, React
+                  Native, Next.js, Node.js, MySQL, and MongoDB to deliver
+                  high-quality digital solutions with clean code and great user
+                  experience. I'm constantly striving to improve my skills and
+                  stay up to date with the latest technologies to ensure the
+                  best performance, visual appeal, and security in every project
+                  I work on.
+                </p>
+              </div>
             </section>
           </main>
         </div>
@@ -56,25 +75,25 @@
             <h2 class="secondary-heading">Frontend</h2>
             <div class="frontend">
               <div class="profile-skill">
-                <div class="skill-circle">
+                <div class="skill-circle" data-percentage="100">
                   <div class="background-circle">
-                    <p class="percentage">100 %</p>
+                    <p class="percentage">0 %</p>
                   </div>
                 </div>
                 <p class="skill-name">HTML & CSS</p>
               </div>
               <div class="profile-skill">
-                <div class="skill-circle">
+                <div class="skill-circle" data-percentage="100">
                   <div class="background-circle">
-                    <p class="percentage">100 %</p>
+                    <p class="percentage">0 %</p>
                   </div>
                 </div>
                 <p class="skill-name">JavaScript</p>
               </div>
               <div class="profile-skill">
-                <div class="skill-circle react">
+                <div class="skill-circle react" data-percentage="80">
                   <div class="background-circle">
-                    <p class="percentage">80 %</p>
+                    <p class="percentage">0 %</p>
                   </div>
                 </div>
                 <p class="skill-name">React</p>
@@ -84,9 +103,9 @@
             <h2 class="secondary-heading">Backend</h2>
             <div class="backend">
               <div class="profile-skill">
-                <div class="skill-circle nodejs">
+                <div class="skill-circle nodejs" data-percentage="75">
                   <div class="background-circle">
-                    <p class="percentage">75 %</p>
+                    <p class="percentage">0 %</p>
                   </div>
                 </div>
                 <p class="skill-name">node.js</p>
@@ -96,9 +115,9 @@
             <h2 class="secondary-heading">Databases</h2>
             <div class="databases">
               <div class="profile-skill">
-                <div class="skill-circle mysql">
+                <div class="skill-circle mysql" data-percentage="70">
                   <div class="background-circle">
-                    <p class="percentage">70 %</p>
+                    <p class="percentage">0 %</p>
                   </div>
                 </div>
                 <p class="skill-name">MySQL</p>
