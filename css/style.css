@@ -109,7 +109,6 @@ Default: 16px
 
 .skill-name {
   font-size: 1.6rem;
-  line-height: 1.5;
 }
 
 .profile-skill {
@@ -253,3 +252,83 @@ Default: 16px
 /**************************/
 /* ABOUT ME SECTION */
 /**************************/
+
+.section-about-me {
+  margin-top: 1.6rem;
+}
+
+.about-me-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/**************************/
+/* SERVICE SECTION */
+/**************************/
+
+.section-services {
+  margin-top: 4.8rem;
+}
+
+.nav-box-secondary-heading {
+  margin-bottom: 3.2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.service-box {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2.4rem;
+
+  /* background-color: #202022; */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(0, 0, 0, 0.06)
+  );
+  border: rgba(81, 81, 81, 0.5) solid 1px;
+  border-radius: 1.2rem;
+  padding: 3.2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* .service-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(0, 0, 0, 0.06)
+  );
+  pointer-events: none;
+} */
+
+.code-icon {
+  transform: translateY(-5px);
+}
+
+.phone-icon {
+  transform: translateY(1px);
+}
+
+.cloud-icon {
+  transform: translateY(-2.5px);
+}
+
+.service-icon {
+  color: #ffdb70;
+  width: 4rem;
+  height: 4rem;
+}
+
+.service-content {
+}

@@ -1,15 +1,57 @@
-///////////////////////////////////
+//////////////////////////////////////////////////////
+ABOUT ME
+//////////////////////////////////////////////////////
+/////////////////////////
 About Me Text (Deutsch)
+/////////////////////////
 
 Ich bin Lukas Rühlow, 25 Jahre alt und lebe in Chemnitz.
 Als leidenschaftlicher Fullstack-Webentwickler und App-Entwickler konzentriere ich mich auf moderne Technologien und performante Lösungen. Ich arbeite mit HTML, CSS, JavaScript, React, React Native, Next.js, Node.js, MySQL und MongoDB, um leistungsstarke, benutzerfreundliche und sichere Anwendungen zu erstellen.
 
 Mein Ziel ist es, ästhetisch ansprechende und funktionale digitale Produkte zu bauen, die Nutzer begeistern und echten Mehrwert bieten. Dabei halte ich mich stets über neue Technologien und Best Practices auf dem Laufenden, um meine Fähigkeiten kontinuierlich weiterzuentwickeln und moderne Standards einzuhalten.
 
-///////////////////////////////////
+/////////////////////////
 About Me Text (English)
+/////////////////////////
 
 I’m Lukas Rühlow, a 25-year-old developer based in Chemnitz, Germany.
 As a passionate fullstack web and native app developer, I focus on building modern, performant, and secure applications. I work with HTML, CSS, JavaScript, React, React Native, Next.js, Node.js, MySQL, and MongoDB to deliver high-quality digital solutions with clean code and great user experience.
 
 I'm constantly striving to improve my skills and stay up to date with the latest technologies to ensure the best performance, visual appeal, and security in every project I work on.
+
+//////////////////////////////////////////////////////
+SERVICES
+//////////////////////////////////////////////////////
+/////////////////////////
+Services Text (Deutsch)
+/////////////////////////
+
+Webentwicklung
+Hochwertige Websites mit sauberem Code – schnell, responsiv und barrierefrei.
+
+App-Entwicklung
+Plattformübergreifende Apps für Android & iOS mit React Native – optimiert für Performance und Benutzerfreundlichkeit.
+
+Backend-Entwicklung
+Sichere und skalierbare Backends mit Node.js, MySQL & MongoDB für den produktiven Einsatz.
+
+UI/UX-Umsetzung
+Detailgetreue Umsetzung von Designs – pixelgenau, responsiv und benutzerorientiert.
+
+/////////////////////////
+Services Text (English)
+/////////////////////////
+
+Web Development
+High-quality websites with clean code, built for performance, accessibility, and responsiveness.
+
+App Development
+Cross-platform mobile apps for Android & iOS, developed with React Native for speed and usability.
+
+Backend Development
+Secure and scalable backend systems with Node.js, MySQL & MongoDB – built to power real-world apps.
+
+UI/UX Implementation
+Precise implementation of user interfaces – fully responsive and true to the original design.
+
+
