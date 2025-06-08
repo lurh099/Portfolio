@@ -6,21 +6,23 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 - Colors
+main color: #e28b26
+secondary color: #ffdb70
 
-main color: #ffdb70
+font color 1: #fafafa
+font color 2: #d6d6d6
+
+border color: rgba(81, 81, 81, 0.5)
 
 --- 06 BORDER-RADIUS
 
-Default: 16px
+Default: 1.6rem
+Medium: 1.2rem
 */
 
 /****************************************************/
-/* PROFILE BOX */
+/* LAYOUT */
 /****************************************************/
-
-/**************************/
-/* PROFILE INFO BOX */
-/**************************/
 
 .profile-box,
 .nav-box {
@@ -28,10 +30,7 @@ Default: 16px
   background-color: #1e1e1f;
   border-radius: 1.6rem;
   border: rgba(81, 81, 81, 0.5) solid 1px;
-}
-
-.nav-box {
-  grid-column: 2;
+  align-self: start;
 }
 
 .profile-box {
@@ -39,7 +38,19 @@ Default: 16px
   grid-row: 1 / -1;
 }
 
-.profile-info-box {
+.nav-box {
+  grid-column: 2;
+}
+
+/****************************************************/
+/* PROFILE BOX */
+/****************************************************/
+
+/**************************/
+/* PROFILE INFO SECTION */
+/**************************/
+
+.section-profile-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,7 +80,7 @@ Default: 16px
 }
 
 /**************************/
-/* PROFILE SKILLS BOX */
+/*SKILLS SECTION */
 /**************************/
 
 .profile-box-devider {
@@ -79,7 +90,7 @@ Default: 16px
   margin-bottom: 3.2rem;
 }
 
-.profile-skills-box {
+.section-skills {
   padding: 0 3.2rem;
 }
 
@@ -234,7 +245,11 @@ Default: 16px
   letter-spacing: 1px;
 }
 
-.hi-animation {
+.hero .hi {
+  color: #fafafa;
+}
+
+.hero .hi-animation {
   color: #e28b26;
 }
 
@@ -259,6 +274,7 @@ Default: 16px
 
 .about-me-text {
   font-size: 1.6rem;
+  font-weight: 300;
   line-height: 1.6;
 }
 
@@ -268,10 +284,6 @@ Default: 16px
 
 .section-services {
   margin-top: 4.8rem;
-}
-
-.nav-box-secondary-heading {
-  margin-bottom: 3.2rem;
 }
 
 .services-grid {
@@ -284,8 +296,6 @@ Default: 16px
   display: grid;
   grid-template-columns: auto auto;
   gap: 2.4rem;
-
-  /* background-color: #202022; */
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.02),
@@ -330,5 +340,117 @@ Default: 16px
   height: 4rem;
 }
 
-.service-content {
+.service-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/**************************/
+/* TECH STACK SECTION */
+/**************************/
+
+.section-tech-stack {
+  margin-top: 4.8rem;
+  margin-bottom: 6.4rem;
+}
+
+.tech-carousel {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.viewport {
+  flex: 1;
+}
+
+.viewport-1 {
+  display: flex;
+  flex: 0 0 25%;
+  justify-content: space-between;
+}
+
+.viewport-2 {
+  display: none;
+  flex: 0 0 25%;
+  justify-content: space-between;
+}
+
+.viewport-3 {
+  display: none;
+  flex: 0 0 25%;
+  justify-content: space-between;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 4.4rem;
+  height: 4.4rem;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #353535;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.arrow:disabled {
+  color: #fff;
+  opacity: 0.3;
+  cursor: default;
+}
+
+.arrow:hover {
+  color: #ffdb70;
+  font-size: 2.4rem;
+}
+
+.arrow:disabled:hover {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.tech-link-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 14rem;
+  height: 14rem;
+  border-radius: 1.6rem;
+  background-color: rgba(40, 54, 85, 0.705);
+  transition: all 0.3s;
+}
+
+.tech-link-box:hover {
+  transform: scale(1.1);
+}
+
+.tech-icon {
+  width: 12rem;
+  height: 12rem;
+}
+
+.js {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 1.6rem;
+}
+
+.typescript {
+  width: 14rem;
+  height: 14rem;
+  border-radius: 1.6rem;
+}
+
+.empty-box {
+  width: 14rem;
+  height: 14rem;
+  visibility: hidden;
 }

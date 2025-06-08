@@ -57,6 +57,16 @@ Medium: 11px
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+/****************************************************/
+/* HILFSKLASSEN */
+/****************************************************/
+.no-bg {
+  background: none;
+}
+
+/****************************************************/
+/* GLOBAL */
+/****************************************************/
 * {
   padding: 0;
   margin: 0;
@@ -97,4 +107,17 @@ body {
   font-size: 1.6rem;
 }
 
+.nav-box-secondary-heading {
+  margin-bottom: 3.2rem;
+  color: #fafafa;
+}
 
+.nav-box h1,
+.nav-box h2,
+.nav-box h3 {
+  color: #fafafa;
+}
+
+.nav-box p {
+  color: #d6d6d6;
+}

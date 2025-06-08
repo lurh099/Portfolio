@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 ///////////////////////////////////////////////////////////
-// skill circle animation
+// Skill circle animation
 
 document.addEventListener("DOMContentLoaded", () => {
   const skillCircles = document.querySelectorAll(".skill-circle");
@@ -95,3 +95,74 @@ document.addEventListener("DOMContentLoaded", () => {
 
   skillCircles.forEach((circle) => observer.observe(circle));
 });
+
+///////////////////////////////////////////////////////////
+// Skill slider
+document.addEventListener("DOMContentLoaded", function () {
+  const leftArrow = document.querySelector(".arrow.left");
+  const rightArrow = document.querySelector(".arrow.right");
+  const viewports = [
+    document.querySelector(".viewport-1"),
+    document.querySelector(".viewport-2"),
+    document.querySelector(".viewport-3"),
+  ];
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    viewports.forEach((v, i) => {
+      v.style.opacity = i === currentIndex ? "1" : "0";
+      v.style.transition = "opacity 0.5s ease-in-out";
+      v.style.display = i === currentIndex ? "flex" : "none";
+    });
+
+    leftArrow.disabled = currentIndex === 0;
+    rightArrow.disabled = currentIndex === viewports.length - 1;
+  }
+
+  leftArrow.addEventListener("click", function () {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateCarousel();
+    }
+  });
+
+  rightArrow.addEventListener("click", function () {
+    if (currentIndex < viewports.length - 1) {
+      currentIndex++;
+      updateCarousel();
+    }
+  });
+
+  updateCarousel();
+});
+
+// const wrapper = document.querySelector(".viewport-wrapper");
+// const leftArrow = document.querySelector(".arrow.left");
+// const rightArrow = document.querySelector(".arrow.right");
+
+// let currentSlide = 0;
+// const totalSlides = 3;
+
+// function updateSlider() {
+//   const offset = -currentSlide * 100;
+//   wrapper.style.transform = `translateX(${offset}%)`;
+
+//   leftArrow.disabled = currentSlide === 0;
+//   rightArrow.disabled = currentSlide === totalSlides - 1;
+// }
+
+// rightArrow.addEventListener("click", () => {
+//   if (currentSlide < totalSlides - 1) {
+//     currentSlide++;
+//     updateSlider();
+//   }
+// });
+
+// leftArrow.addEventListener("click", () => {
+//   if (currentSlide > 0) {
+//     currentSlide--;
+//     updateSlider();
+//   }
+// });
+
+// updateSlider(); // initialer Aufruf
