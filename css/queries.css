@@ -1,0 +1,21 @@
+@media (max-width: 78em) {
+  .container {
+    max-width: 95rem;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-box {
+    justify-items: start;
+  }
+
+  .section-profile-info {
+    padding: 0 3.2rem;
+  }
+
+  .nav-box {
+    grid-column: 1;
+  }
+}

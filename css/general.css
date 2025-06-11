@@ -97,7 +97,7 @@ body {
   gap: 4rem;
 }
 
-.grid-2-cols {
+.grid--2-cols {
   grid-template-columns: 1fr 3fr;
 }
 
