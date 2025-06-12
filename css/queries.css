@@ -81,10 +81,6 @@
     display: none;
   }
 
-  .visible {
-    display: block;
-  }
-
   .contact-grid {
     grid-template-columns: auto auto;
     justify-content: start;
@@ -116,6 +112,10 @@
 
   .show-skill-set {
     display: none;
+  }
+
+  .visible {
+    display: block;
   }
 
   .nav-box {
