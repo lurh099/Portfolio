@@ -166,3 +166,42 @@ document.addEventListener("DOMContentLoaded", function () {
 // });
 
 // updateSlider(); // initialer Aufruf
+
+///////////////////////////////////////////////////////////
+// Dropdown menu
+const contactBtn = document.querySelector(".show-contacts .profile-btn");
+const skillBtnContainer = document.querySelector(".show-skill-set");
+const skillBtn = skillBtnContainer.querySelector(".profile-btn");
+
+const contactSection = document.querySelector(".section-contact");
+const skillSection = document.querySelector(".section-skills");
+
+const toggleSection = (btn, section, label) => {
+  const icon = btn.querySelector(".arr-icon");
+
+  section.classList.toggle("visible");
+
+  const isOpen = section.classList.contains("visible");
+  btn.innerHTML = `${
+    isOpen ? "Close" : "Show"
+  } ${label} <ion-icon class="arr-icon" name="chevron-${
+    isOpen ? "up" : "down"
+  }-outline"></ion-icon>`;
+
+  if (label === "Contacts") {
+    // Skill-Button nur anzeigen, wenn Contacts sichtbar
+    skillBtnContainer.style.display = isOpen ? "flex" : "none";
+    // Skills ausblenden, wenn Contacts geschlossen werden
+    if (!isOpen) {
+      skillSection.classList.remove("visible");
+      skillBtn.innerHTML = `Show Skill Set <ion-icon class="arr-icon" name="chevron-down-outline"></ion-icon>`;
+    }
+  }
+};
+
+contactBtn.addEventListener("click", () =>
+  toggleSection(contactBtn, contactSection, "Contacts")
+);
+skillBtn.addEventListener("click", () =>
+  toggleSection(skillBtn, skillSection, "Skill Set")
+);

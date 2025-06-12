@@ -555,30 +555,46 @@
         <aside class="profile-box">
           <section class="section-profile-info">
             <div class="profile-img"></div>
-            <p class="name">Lukas Rühlow</p>
-            <p class="profession">Web Developer</p>
+            <div class="profile-info">
+              <p class="name">Lukas Rühlow</p>
+              <p class="profession">Web Developer</p>
+            </div>
           </section>
+
+          <div class="btn-container show-contacts">
+            <button class="profile-btn">
+              Show Contacts
+              <ion-icon class="arr-icon" name="chevron-down-outline"></ion-icon>
+            </button>
+          </div>
 
           <section class="section-contact">
             <div class="profile-box-devider"></div>
 
             <h1 class="main-heading">Contact</h1>
-            <div class="contact-box">
-              <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
-              <div class="contact-content">
-                <p>EMAIL</p>
-                <a href="mailto:hello@lukasweb.dev">hello@lukasweb.dev</a>
-              </div>
-            </div>
-            <div class="contact-box">
-              <ion-icon class="contact-icon" name="location-outline"></ion-icon>
-              <div class="contact-content">
-                <p>LOCATION</p>
-                <a
-                  href="https://www.google.com/maps/place/Chemnitz/@50.8226946,12.8085761,12z/data=!3m1!4b1!4m6!3m5!1s0x47a7465f01fd9de9:0x51ddf8280975d11c!8m2!3d50.8282222!4d12.9208547!16zL20vMDFiZ2tx?entry=ttu&g_ep=EgoyMDI1MDYwOC4wIKXMDSoASAFQAw%3D%3D"
-                  target="_blank"
-                  >Chemnitz, Germany</a
-                >
+            <div class="contact-container">
+              <div class="contact-grid">
+                <div class="contact-box">
+                  <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
+                  <div class="contact-content">
+                    <p>EMAIL</p>
+                    <a href="mailto:hello@lukasweb.dev">hello@lukasweb.dev</a>
+                  </div>
+                </div>
+                <div class="contact-box">
+                  <ion-icon
+                    class="contact-icon"
+                    name="location-outline"
+                  ></ion-icon>
+                  <div class="contact-content">
+                    <p>LOCATION</p>
+                    <a
+                      href="https://www.google.com/maps/place/Chemnitz/@50.8226946,12.8085761,12z/data=!3m1!4b1!4m6!3m5!1s0x47a7465f01fd9de9:0x51ddf8280975d11c!8m2!3d50.8282222!4d12.9208547!16zL20vMDFiZ2tx?entry=ttu&g_ep=EgoyMDI1MDYwOC4wIKXMDSoASAFQAw%3D%3D"
+                      target="_blank"
+                      >Chemnitz, Germany</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
             <div class="social-list">
@@ -606,60 +622,74 @@
             </div>
           </section>
 
+          <div class="btn-container show-skill-set">
+            <button class="profile-btn">
+              Show Skill Set
+              <ion-icon class="arr-icon" name="chevron-down-outline"></ion-icon>
+            </button>
+          </div>
+
           <section class="section-skills">
             <div class="profile-box-devider"></div>
-
             <h1 class="main-heading">My Skill Set</h1>
 
-            <h2 class="secondary-heading">Frontend</h2>
-            <div class="frontend">
-              <div class="profile-skill">
-                <div class="skill-circle" data-percentage="100">
-                  <div class="background-circle">
-                    <p class="percentage">0 %</p>
+            <div class="skills-grid">
+              <div class="skill-box">
+                <h2 class="secondary-heading">Frontend</h2>
+                <div class="frontend">
+                  <div class="profile-skill">
+                    <div class="skill-circle" data-percentage="100">
+                      <div class="background-circle">
+                        <p class="percentage">0 %</p>
+                      </div>
+                    </div>
+                    <p class="skill-name">HTML & CSS</p>
+                  </div>
+                  <div class="profile-skill">
+                    <div class="skill-circle" data-percentage="100">
+                      <div class="background-circle">
+                        <p class="percentage">0 %</p>
+                      </div>
+                    </div>
+                    <p class="skill-name">JavaScript</p>
+                  </div>
+                  <div class="profile-skill">
+                    <div class="skill-circle react" data-percentage="80">
+                      <div class="background-circle">
+                        <p class="percentage">0 %</p>
+                      </div>
+                    </div>
+                    <p class="skill-name">React</p>
                   </div>
                 </div>
-                <p class="skill-name">HTML & CSS</p>
               </div>
-              <div class="profile-skill">
-                <div class="skill-circle" data-percentage="100">
-                  <div class="background-circle">
-                    <p class="percentage">0 %</p>
-                  </div>
-                </div>
-                <p class="skill-name">JavaScript</p>
-              </div>
-              <div class="profile-skill">
-                <div class="skill-circle react" data-percentage="80">
-                  <div class="background-circle">
-                    <p class="percentage">0 %</p>
-                  </div>
-                </div>
-                <p class="skill-name">React</p>
-              </div>
-            </div>
 
-            <h2 class="secondary-heading">Backend</h2>
-            <div class="backend">
-              <div class="profile-skill">
-                <div class="skill-circle nodejs" data-percentage="75">
-                  <div class="background-circle">
-                    <p class="percentage">0 %</p>
+              <div class="skill-box">
+                <h2 class="secondary-heading">Backend</h2>
+                <div class="backend">
+                  <div class="profile-skill">
+                    <div class="skill-circle nodejs" data-percentage="75">
+                      <div class="background-circle">
+                        <p class="percentage">0 %</p>
+                      </div>
+                    </div>
+                    <p class="skill-name">node.js</p>
                   </div>
                 </div>
-                <p class="skill-name">node.js</p>
               </div>
-            </div>
 
-            <h2 class="secondary-heading">Databases</h2>
-            <div class="databases">
-              <div class="profile-skill">
-                <div class="skill-circle mysql" data-percentage="70">
-                  <div class="background-circle">
-                    <p class="percentage">0 %</p>
+              <div class="skill-box">
+                <h2 class="secondary-heading">Databases</h2>
+                <div class="databases">
+                  <div class="profile-skill">
+                    <div class="skill-circle mysql" data-percentage="70">
+                      <div class="background-circle">
+                        <p class="percentage">0 %</p>
+                      </div>
+                    </div>
+                    <p class="skill-name">MySQL</p>
                   </div>
                 </div>
-                <p class="skill-name">MySQL</p>
               </div>
             </div>
           </section>
