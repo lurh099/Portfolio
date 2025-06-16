@@ -86,6 +86,7 @@ Medium: 1.2rem
 
 .profession {
   font-size: 1.4rem;
+  text-align: center;
   background-color: #2e2e2e;
   padding: 0.6rem 2rem;
   border-radius: 0.7rem;
@@ -263,13 +264,13 @@ Medium: 1.2rem
 /* NAV BOX */
 /****************************************************/
 
-/**************************/
-/* NAVIGATION */
-/**************************/
-
 .nav-box {
   position: relative;
 }
+
+/**************************/
+/* NAVIGATION */
+/**************************/
 
 .main-nav {
   width: 100%;
@@ -284,7 +285,9 @@ Medium: 1.2rem
   position: absolute;
   right: 0;
   top: 0;
-  background-color: #2b2b2cbf;
+  background-color: rgba(43, 43, 44, 0.749);
+  backdrop-filter: blur(10px);
+  z-index: 99999;
   border-top-right-radius: 1.6rem;
   border-bottom-left-radius: 1.6rem;
   border-left: rgba(81, 81, 81, 0.5) solid 1px;
@@ -308,9 +311,13 @@ Medium: 1.2rem
   color: #ffdb70;
 }
 
+/**************************/
+/* HERO SECTION */
+/**************************/
+
 .nav-box-heading {
   position: absolute;
-  top: 5rem;
+  top: 4.8rem;
   left: 3.2rem;
   font-size: 3rem;
   font-weight: 600;
@@ -327,16 +334,9 @@ Medium: 1.2rem
   left: 0;
 }
 
-/**************************/
-/* HERO SECTION */
-/**************************/
-
 .hi,
 .hi-animation {
-  font-size: 5.2rem;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 1px;
+  display: none;
 }
 
 .hero .hi {
@@ -502,9 +502,21 @@ Medium: 1.2rem
 
   width: 14rem;
   height: 14rem;
-  border-radius: 1.6rem;
+  border-radius: 3rem;
   background-color: rgba(40, 54, 85, 0.705);
   transition: all 0.3s;
+}
+
+.js-bg {
+  background-color: #f0db4f;
+}
+
+.ts-bg {
+  background-color: #007acc;
+}
+
+.next-bg {
+  background-color: #000;
 }
 
 .tech-link-box:hover {
@@ -516,20 +528,35 @@ Medium: 1.2rem
   height: 12rem;
 }
 
-.js {
-  width: 14rem;
-  height: 14rem;
-  border-radius: 1.6rem;
-}
-
-.typescript {
-  width: 14rem;
-  height: 14rem;
-  border-radius: 1.6rem;
-}
-
 .empty-box {
   width: 14rem;
   height: 14rem;
   visibility: hidden;
+}
+
+.carousel-progress {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.carousel-track {
+  position: relative;
+  width: 90%;
+  height: 4px;
+  background-color: #3a3a3a;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.carousel-thumb {
+  position: absolute;
+  top: -4px;
+  width: 48px;
+  height: 12px;
+  background-color: #ffdb70;
+  border-radius: 6px;
+  cursor: grab;
+  transition: left 0.3s ease;
 }

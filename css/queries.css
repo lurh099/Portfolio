@@ -6,6 +6,7 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+/* 1248px / 16px = 78em */
 @media (max-width: 78em) {
   .container {
     max-width: 95rem;
@@ -120,5 +121,130 @@
 
   .nav-box {
     grid-column: 1;
+  }
+}
+
+/* 1023px / 16px = 6pem */
+@media (max-width: 64em) {
+  .container {
+    max-width: 70rem;
+    margin-bottom: 10rem;
+  }
+
+  .main-nav-list {
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    right: auto;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 1.6rem;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 1.6rem;
+    border: rgba(81, 81, 81, 0.5) solid 1px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-box {
+    grid-template-columns: 1fr 15fr;
+  }
+
+  /* .tech-link-box {
+    flex: 0 0 calc(33.33% - 2rem);
+  } */
+}
+
+/* 767px / 16px = 48rem */
+@media (max-width: 48rem) {
+  .container {
+    max-width: 52rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hi,
+  .hi-animation {
+    font-size: 3.6rem;
+  }
+
+  .tech-link-box {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .empty-box {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .tech-icon {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+/* 579px / 16px = 36rem */
+@media (max-width: 36.19rem) {
+  .container {
+    max-width: 54rem;
+    margin: 1.6rem auto;
+  }
+
+  .main-content {
+    padding: 0 1.6rem;
+    margin-top: 0;
+  }
+
+  /* .about-me-text,
+  .service-text {
+    font-size: 1.4rem;
+  } */
+
+  /* .section-about-me {
+    margin-top: 0;
+  } */
+
+  .nav-box-heading {
+    top: 1.6rem;
+    left: 1.6rem;
+    font-size: 2.4rem;
+  }
+
+  .nav-box-heading::after {
+    top: 3.3rem;
+    width: 3rem;
+    height: 0.25rem;
+  }
+
+  .section-profile-info {
+    padding: 1.6rem 1.6rem 0;
+    margin: 0;
+    column-gap: 1.4rem;
+  }
+
+  .profile-img {
+    background-image: url(../img/profile-img-small.jpg);
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 0;
+  }
+
+  .name {
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .profession {
+    font-size: 1.2rem;
   }
 }

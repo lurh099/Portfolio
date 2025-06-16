@@ -101,11 +101,12 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", function () {
   const leftArrow = document.querySelector(".arrow.left");
   const rightArrow = document.querySelector(".arrow.right");
-  const viewports = [
-    document.querySelector(".viewport-1"),
-    document.querySelector(".viewport-2"),
-    document.querySelector(".viewport-3"),
-  ];
+  const viewportWrapper = document.querySelector(".viewport");
+  const icons = Array.from(
+    document.querySelectorAll(".tech-link-box, .empty-box")
+  );
+
+  let viewports = [];
   let currentIndex = 0;
 
   function updateCarousel() {
@@ -117,6 +118,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
     leftArrow.disabled = currentIndex === 0;
     rightArrow.disabled = currentIndex === viewports.length - 1;
+  }
+
+  function initMobileCarousel() {
+    viewportWrapper.innerHTML = ""; // leeren
+
+    const iconsPerViewport = 3;
+    const totalViewports = Math.ceil(icons.length / iconsPerViewport);
+
+    for (let i = 0; i < totalViewports; i++) {
+      const viewport = document.createElement("div");
+      viewport.classList.add(`viewport-${i + 1}`);
+      viewport.style.display = "none";
+      viewport.style.flex = "0 0 100%";
+      viewport.style.justifyContent = "center";
+      viewport.style.flexWrap = "wrap";
+      viewport.style.gap = "2rem";
+
+      const start = i * iconsPerViewport;
+      const end = start + iconsPerViewport;
+      icons.slice(start, end).forEach((icon) => viewport.appendChild(icon));
+
+      viewportWrapper.appendChild(viewport);
+    }
+
+    viewports = Array.from(viewportWrapper.children);
+    updateCarousel();
+  }
+
+  function initDesktopCarousel() {
+    viewports = [
+      document.querySelector(".viewport-1"),
+      document.querySelector(".viewport-2"),
+      document.querySelector(".viewport-3"),
+    ];
+    updateCarousel();
+  }
+
+  function setupCarousel() {
+    if (window.innerWidth < 1024) {
+      initMobileCarousel();
+    } else {
+      initDesktopCarousel();
+    }
   }
 
   leftArrow.addEventListener("click", function () {
@@ -133,39 +177,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  updateCarousel();
+  setupCarousel();
+  window.addEventListener("resize", () => {
+    setupCarousel();
+  });
 });
-
-// const wrapper = document.querySelector(".viewport-wrapper");
-// const leftArrow = document.querySelector(".arrow.left");
-// const rightArrow = document.querySelector(".arrow.right");
-
-// let currentSlide = 0;
-// const totalSlides = 3;
-
-// function updateSlider() {
-//   const offset = -currentSlide * 100;
-//   wrapper.style.transform = `translateX(${offset}%)`;
-
-//   leftArrow.disabled = currentSlide === 0;
-//   rightArrow.disabled = currentSlide === totalSlides - 1;
-// }
-
-// rightArrow.addEventListener("click", () => {
-//   if (currentSlide < totalSlides - 1) {
-//     currentSlide++;
-//     updateSlider();
-//   }
-// });
-
-// leftArrow.addEventListener("click", () => {
-//   if (currentSlide > 0) {
-//     currentSlide--;
-//     updateSlider();
-//   }
-// });
-
-// updateSlider(); // initialer Aufruf
 
 ///////////////////////////////////////////////////////////
 // Dropdown menu
@@ -205,3 +221,9 @@ contactBtn.addEventListener("click", () =>
 skillBtn.addEventListener("click", () =>
   toggleSection(skillBtn, skillSection, "Skill Set")
 );
+
+///////////////////////////////////////////////////////////
+// TEST
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("JS ist aktiv");
+});
