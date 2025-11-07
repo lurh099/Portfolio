@@ -1,7 +1,30 @@
 ///////////////////////////////////////////////////////////
-// Active nav link color
+// Nav bar
+const aboutLink = document.querySelector(".aboutLink");
+const journeyLink = document.querySelector(".journeyLink");
+const portfolioLink = document.querySelector(".portfolioLink");
+const blogLink = document.querySelector(".blogLink");
+const contactLink = document.querySelector(".contactLink");
+
+const about = document.querySelector(".about");
+const journey = document.querySelector(".journey");
 
 const navLinks = document.querySelectorAll(".main-nav-link");
+const mainContent = document.querySelector(".main-content");
+
+aboutLink.addEventListener("click", function () {
+  about.classList.remove("hidden");
+  journey.classList.add("hidden");
+});
+
+journeyLink.addEventListener("click", function () {
+  journey.classList.remove("hidden");
+  about.classList.add("hidden");
+});
+
+///////////////////////////////////////////////////////////
+// Active nav link color
+// const navLinks = document.querySelectorAll(".main-nav-link");
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
