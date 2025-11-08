@@ -33,6 +33,45 @@ navLinks.forEach((link) => {
   });
 });
 
+// ///////////////////////////////////////////////////////////
+// // Make mobile navigation work
+// const btnNavEL = document.querySelector(".btn-mobile-nav");
+// const headerEL = document.querySelector(".nav-box-header");
+
+// btnNavEL.addEventListener("click", function () {
+//   headerEL.classList.toggle("nav-open");
+// });
+
+// ///////////////////////////////////////////////////////////
+// // Smooth scrolling animation
+
+// const allLinks = document.querySelectorAll("a:link");
+// console.log(allLinks);
+
+// allLinks.forEach(function (link) {
+//   link.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const href = link.getAttribute("href");
+
+//     // Scroll back to top
+//     if (href === "#")
+//       window.scrollTo({
+//         top: 0,
+//         behavior: "smooth",
+//       });
+
+//     // Scroll to other links
+//     if (href !== "#" && href.startsWith("#")) {
+//       const sectionEL = document.querySelector(href);
+//       sectionEL.scrollIntoView({ behavior: "smooth" });
+//     }
+
+//     // Close mobile navigation
+//     if (link.classList.contains("main-nav-link"))
+//       headerEL.classList.toggle("nav-open");
+//   });
+// });
+
 ///////////////////////////////////////////////////////////
 // Typing text animation
 

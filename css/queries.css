@@ -30,10 +30,13 @@
   }
 
   .profile-img {
-    background-image: url(../img/profile-img-medium.jpg);
     width: 12rem;
     height: 12rem;
     margin-bottom: 0;
+
+    background-size: cover; /* füllt den Container aus */
+    background-position: center; /* Bild bleibt zentriert */
+    background-repeat: no-repeat; /* kein Kacheleffekt */
   }
 
   .profession {
@@ -124,7 +127,7 @@
   }
 }
 
-/* 1023px / 16px = 6pem */
+/* 1023px / 16px = 64em */
 @media (max-width: 64em) {
   .container {
     max-width: 70rem;
@@ -174,7 +177,7 @@
 
   .hi,
   .hi-animation {
-    font-size: 3.6rem;
+    display: none;
   }
 
   .tech-link-box {
@@ -194,10 +197,10 @@
 }
 
 /* 576px / 16px = 36rem */
-@media (max-width: 36.19rem) {
+@media (max-width: 36.19em) {
   .container {
     max-width: 54rem;
-    margin: 1.6rem auto;
+    margin: 1.6rem 1.6rem 8.5rem 1.6rem;
   }
 
   .main-content {
@@ -205,6 +208,12 @@
     margin-top: 0;
   }
 
+  .main-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+  /*---------------------- MOBILE NAV ----------------------*/
   /* .main-nav {
     background-color: rgba(43, 43, 44, 0.749);
     backdrop-filter: blur(10px);
@@ -288,25 +297,71 @@
     height: 0.25rem;
   }
 
-  .section-profile-info {
+  /* .section-profile-info {
     padding: 1.6rem 1.6rem 0;
     margin: 0;
     column-gap: 1.4rem;
+  } */
+
+  .profile-box {
+    justify-items: center;
   }
 
-  .profile-img {
-    background-image: url(../img/profile-img-small.jpg);
-    width: 8rem;
-    height: 8rem;
-    margin-bottom: 0;
+  .section-profile-info {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    padding: 1.6rem 0 3.2rem 0;
+    margin: 0;
   }
 
-  .name {
-    font-size: 1.8rem;
-    margin-bottom: 1.4rem;
+  .section-profile-info .profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
   }
 
-  .profession {
-    font-size: 1.2rem;
+  .section-profile-info .name {
+    margin: 0;
+  }
+}
+
+/* 450px / 16px = 28.125em*/
+@media (max-width: 28.125em) {
+  .social-list {
+    padding-bottom: 3.2rem;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-box-secondary-heading {
+    text-align: center;
+  }
+
+  .service-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+
+    padding: 1.6rem;
+  }
+
+  .service-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-heading {
+    text-align: center;
+  }
+
+  .service-text {
+    text-align: center;
   }
 }
