@@ -127,21 +127,6 @@ Medium: 1.2rem
   gap: 1.6rem;
 }
 
-.contact-icon {
-  width: 1.8rem;
-  height: 1.8rem;
-  color: #ffdb70;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.02),
-    rgba(0, 0, 0, 0.06)
-  );
-  border: rgba(81, 81, 81, 0.5) solid 1px;
-  border-radius: 1.2rem;
-  padding: 1.5rem;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
-}
-
 .contact-box p {
   font-size: 1.2rem;
   color: #d6d6d6b2;
@@ -347,6 +332,9 @@ Medium: 1.2rem
   left: 0;
 }
 
+/****************************************************/
+/* MAIN-CONTENT-ABOUT */
+/****************************************************/
 .hi,
 .hi-animation {
   font-size: 5.2rem;
@@ -576,4 +564,99 @@ Medium: 1.2rem
   border-radius: 6px;
   cursor: grab;
   transition: left 0.3s ease;
+}
+
+/****************************************************/
+/* MAIN-CONTENT-JOURNEY */
+/****************************************************/
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 2.4rem;
+  position: relative; /*--------*/
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2.4rem;
+  /* border-left: 1px solid #51515180; */
+  margin-left: 2.5rem;
+}
+
+/*-------*/
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 2.4rem;
+  left: 0;
+  width: 1px;
+  height: calc(100% - 2.4rem);
+  background-color: #51515180;
+  z-index: 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.4rem;
+  padding-left: 1.2rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 0.25rem;
+  left: -3.2rem;
+  width: 16px;
+  height: 16px;
+  background-color: #ffdb70;
+  border-radius: 50%;
+  border: 4px solid #2e2e2e;
+  z-index: 1; /*---------*/
+}
+
+.timeline-content .project-heading {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.timeline-content .period {
+  color: #ffdb70;
+  margin-top: 0.8rem;
+}
+
+.timeline-content .location {
+  font-style: italic;
+  margin: 0.8rem 0;
+}
+
+.bullet-list {
+  list-style: none;
+  padding: 0;
+}
+
+.bullet-list li {
+  position: relative;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+  color: #d6d6d6;
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.bullet-list li:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #ffdb70;
+  border-radius: 50%;
+  left: 0;
+  top: 1.1rem;
 }

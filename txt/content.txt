@@ -54,4 +54,52 @@ Secure and scalable backend systems with Node.js, MySQL & MongoDB – built to p
 UI/UX Implementation
 Precise implementation of user interfaces – fully responsive and true to the original design.
 
+//////////////////////////////////////////////////////
+JOURNEY TEXT
+//////////////////////////////////////////////////////
 
+/////////////////////////
+Journey Text (Deutsch)
+/////////////////////////
+
+Persönliche Portfolio-Webseite
+
+Mai 2025 – heute
+Chemnitz, Deutschland
+
+Entwicklung einer vollständigen, mehrseitigen Portfolio-Webseite mit HTML, CSS und JavaScript.
+
+Umsetzung zentraler Funktionen wie Seitenwechsel über Navigation, Modale Fenster und interaktive Elemente mit sauberem, wartbarem Code.
+
+Integration selbst entwickelter UI-Komponenten, z. B. animierte Fortschrittsanzeigen für Skills.
+
+Strukturierung nach dem Prinzip Desktop-First mit geplanter mobiler Optimierung.
+
+Erweiterung und Anpassung eines bestehenden Designs durch eigene Features und Verbesserungen.
+
+Nutzung von Git & GitHub zur Versionsverwaltung und Dokumentation des Fortschritts.
+
+Dieses Projekt zeigt meine Selbstlernkompetenz, meine Fähigkeit zur eigenständigen Problemlösung und meine praktischen Kenntnisse in der Frontend-Entwicklung.
+
+/////////////////////////
+Journey Text (English)
+/////////////////////////
+
+Personal Portfolio Website
+
+May 2025 – Present
+Chemnitz, Germany
+
+Built a complete, multi-page portfolio website using HTML, CSS, and JavaScript.
+
+Developed key features like navigation-based page switching, modal behavior, and interactive UI components with clean and maintainable code.
+
+Created custom elements such as animated skill progress indicators.
+
+Structured the layout with a desktop-first approach, with mobile optimization planned.
+
+Customized and extended an existing design template with self-developed features and personal enhancements.
+
+Used Git & GitHub for version control and project tracking.
+
+This project demonstrates my ability to learn independently, solve real problems, and apply frontend development skills in a real-world setting.
