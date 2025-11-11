@@ -569,6 +569,17 @@ Medium: 1.2rem
 /****************************************************/
 /* MAIN-CONTENT-JOURNEY */
 /****************************************************/
+/* Line from icon to the first dot */
+.timeline-head-line {
+  position: absolute;
+  left: 5.7rem;
+  top: 18.45rem;
+  height: 3.8rem;
+  width: 1px;
+  background-color: #51515180;
+  z-index: 0;
+}
+
 .section-header {
   display: flex;
   align-items: center;
@@ -586,20 +597,31 @@ Medium: 1.2rem
 .timeline {
   position: relative;
   padding-left: 2.4rem;
-  /* border-left: 1px solid #51515180; */
+  border-left: 1px solid #51515180;
   margin-left: 2.5rem;
 }
 
 /*-------*/
-.timeline::before {
+/* .timeline::before {
   content: "";
   position: absolute;
-  top: 2.4rem;
+  top: 0.8rem;
   left: 0;
   width: 1px;
-  height: calc(100% - 2.4rem);
+  height: 100%;
   background-color: #51515180;
   z-index: 0;
+} */
+
+.timeline-item:last-child::after {
+  content: "";
+  position: absolute;
+  left: -2.5rem;
+  bottom: -1.85rem;
+  width: 5px;
+  height: 100%;
+  background-color: #1e1e1f;
+  z-index: 2;
 }
 
 .timeline-item {

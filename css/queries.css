@@ -325,6 +325,13 @@
   .section-profile-info .name {
     margin: 0;
   }
+
+  /* section-journey */
+  .timeline-head-line {
+    left: 4.1rem;
+    top: 11.4rem;
+    height: 3rem;
+  }
 }
 
 /* 450px / 16px = 28.125em*/

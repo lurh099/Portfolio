@@ -284,6 +284,25 @@ skillBtn.addEventListener("click", () =>
   toggleSection(skillBtn, skillSection, "Skill Set")
 );
 
+// Schließt alle geöffneten Sections
+const closeDropdowns = () => {
+  if (contactSection.classList.contains("visible")) {
+    contactSection.classList.remove("visible");
+    contactBtn.innerHTML = `Show Contacts <ion-icon class="arr-icon" name="chevron-down-outline"></ion-icon>`;
+    skillBtnContainer.style.display = "none";
+  }
+
+  if (skillSection.classList.contains("visible")) {
+    skillSection.classList.remove("visible");
+    skillBtn.innerHTML = `Show Skill Set <ion-icon class="arr-icon" name="chevron-down-outline"></ion-icon>`;
+  }
+};
+
+// Bei Klick auf einen beliebigen Menülink Dropdowns schließen
+navLinks.forEach((link) => {
+  link.addEventListener("click", closeDropdowns);
+});
+
 ///////////////////////////////////////////////////////////
 // TEST
 document.addEventListener("DOMContentLoaded", () => {
