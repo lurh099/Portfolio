@@ -329,8 +329,22 @@
   /* section-journey */
   .timeline-head-line {
     left: 4.1rem;
-    top: 11.4rem;
+    top: 13rem;
     height: 3rem;
+  }
+
+  /* section-contact */
+  .form-row {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .full-name {
+    margin-bottom: 3.2rem;
+  }
+
+  .btn {
+    width: 100%;
   }
 }
 

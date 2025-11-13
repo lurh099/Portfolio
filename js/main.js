@@ -8,6 +8,9 @@ const contactLink = document.querySelector(".contactLink");
 
 const about = document.querySelector(".about");
 const journey = document.querySelector(".journey");
+const portfolio = document.querySelector(".portfolio");
+const blog = document.querySelector(".blog");
+const contact = document.querySelector(".contact");
 
 const navLinks = document.querySelectorAll(".main-nav-link");
 const mainContent = document.querySelector(".main-content");
@@ -15,11 +18,41 @@ const mainContent = document.querySelector(".main-content");
 aboutLink.addEventListener("click", function () {
   about.classList.remove("hidden");
   journey.classList.add("hidden");
+  portfolio.classList.add("hidden");
+  blog.classList.add("hidden");
+  contact.classList.add("hidden");
 });
 
 journeyLink.addEventListener("click", function () {
   journey.classList.remove("hidden");
   about.classList.add("hidden");
+  portfolio.classList.add("hidden");
+  blog.classList.add("hidden");
+  contact.classList.add("hidden");
+});
+
+portfolioLink.addEventListener("click", function () {
+  portfolio.classList.remove("hidden");
+  about.classList.add("hidden");
+  journey.classList.add("hidden");
+  blog.classList.add("hidden");
+  contact.classList.add("hidden");
+});
+
+blogLink.addEventListener("click", function () {
+  blog.classList.remove("hidden");
+  portfolio.classList.add("hidden");
+  about.classList.add("hidden");
+  journey.classList.add("hidden");
+  contact.classList.add("hidden");
+});
+
+contactLink.addEventListener("click", function () {
+  contact.classList.remove("hidden");
+  portfolio.classList.add("hidden");
+  about.classList.add("hidden");
+  journey.classList.add("hidden");
+  blog.classList.add("hidden");
 });
 
 ///////////////////////////////////////////////////////////

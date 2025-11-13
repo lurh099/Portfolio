@@ -14,7 +14,7 @@ nav color: #2b2b2cbf
 font color 1: #fafafa
 font color 2: #d6d6d6
 
-border color: rgba(81, 81, 81, 0.5)
+border color: #51515180
 
 --- 06 BORDER-RADIUS
 
@@ -31,7 +31,7 @@ Medium: 1.2rem
   width: 100%;
   background-color: #1e1e1f;
   border-radius: 1.6rem;
-  border: rgba(81, 81, 81, 0.5) solid 1px;
+  border: #51515180 solid 1px;
   align-self: start;
 }
 
@@ -57,6 +57,10 @@ Medium: 1.2rem
   width: 100%;
   height: 1px;
   margin-bottom: 3.2rem;
+}
+
+.content {
+  margin-top: 1.6rem;
 }
 
 /**************************/
@@ -366,10 +370,6 @@ Medium: 1.2rem
 /* ABOUT ME SECTION */
 /**************************/
 
-.section-about-me {
-  margin-top: 1.6rem;
-}
-
 .about-me-text {
   font-size: 1.6rem;
   font-weight: 300;
@@ -569,6 +569,7 @@ Medium: 1.2rem
 /****************************************************/
 /* MAIN-CONTENT-JOURNEY */
 /****************************************************/
+
 /* Line from icon to the first dot */
 .timeline-head-line {
   position: absolute;
@@ -617,7 +618,7 @@ Medium: 1.2rem
   content: "";
   position: absolute;
   left: -2.5rem;
-  bottom: -1.85rem;
+  bottom: -1.63rem;
   width: 5px;
   height: 100%;
   background-color: #1e1e1f;
@@ -632,7 +633,7 @@ Medium: 1.2rem
 
 .timeline-dot {
   position: absolute;
-  top: 0.25rem;
+  top: 0rem;
   left: -3.2rem;
   width: 16px;
   height: 16px;
@@ -681,4 +682,55 @@ Medium: 1.2rem
   border-radius: 50%;
   left: 0;
   top: 1.1rem;
+}
+
+/****************************************************/
+/* MAIN-CONTENT-CONTACT */
+/****************************************************/
+.form-row {
+  display: flex;
+  gap: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 15px 20px;
+  width: 100%;
+  background-color: #1e1e1f;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border: 1px solid #51515180;
+  border-radius: 14px;
+}
+
+.subject,
+.message {
+  margin-bottom: 3.2rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: auto;
+  margin-bottom: 3.2rem;
+
+  width: 17rem;
+  height: 5rem;
+  border: 1px solid #51515180;
+  border-radius: 14px;
+  color: #ffdb70;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(0, 0, 0, 0.06)
+  );
+  cursor: pointer;
 }
